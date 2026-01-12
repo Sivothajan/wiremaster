@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#222">
+
+    <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+        <Button
+                android:id="@+id/btnRotate"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="#555"
+                android:text="@string/rotate"
+                android:textColor="#E1BEE7"
+                android:textSize="12sp"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/pinch_to_zoom_tap_buttons_below_to_move_dots"
+                android:textColor="#FFF"
+                android:textSize="11sp"/>
+
+        <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="#555"
+                android:text="@string/reset"
+                android:textColor="#E1BEE7"
+                android:textSize="12sp"/>
+    </LinearLayout>
+
+    <com.example.wiremaster.WireAnnotationView
+            android:id="@+id/wireAnnotationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomPanel"
+            android:layout_below="@id/topBar"/>
+
+    <LinearLayout
+            android:id="@+id/bottomPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#000"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btnSetP1"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:text="Set Left"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btnSetSag"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FF9800"
+                    android:text="Set Sag"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btnSetP2"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:text="Set Right"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/txtFinalResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/result"
+                android:textColor="#03DAC5"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        <Button
+                android:id="@+id/btnCalculateFinal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#6200EE"
+                android:text="@string/calculate_length"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                tools:ignore="VisualLintButtonSize"/>
+    </LinearLayout>
+</RelativeLayout>
