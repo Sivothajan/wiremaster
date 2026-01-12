@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">wiremaster</string>
+    <string name="mark_2_points">Mark 2 Points</string>
+    <string name="next_step">Next Step</string>
+    <string name="load_from_gallery">Load from Gallery</string>
+    <string name="snap">SNAP</string>
+    <string name="checking_level">Checking Level…</string>
+    <string name="pinch_to_zoom_drag_dots">Pinch to Zoom / Drag Dots</string>
+    <string name="calculate_length">CALCULATE LENGTH</string>
+    <string name="reset">Reset</string>
+    <string name="rotate">Rotate</string>
+    <string name="result">Result: —</string>
+    <string name="pinch_to_zoom_tap_buttons_below_to_move_dots">Pinch to Zoom / Tap Buttons below to move dots</string>
+    <string name="set_left">Set Left</string>
+    <string name="set_sag">Set Sag</string>
+    <string name="set_right">Set Right</string>
+    <string name="reset_points">Reset Points</string>
+    <string name="about_license">About / License</string>
+</resources>
